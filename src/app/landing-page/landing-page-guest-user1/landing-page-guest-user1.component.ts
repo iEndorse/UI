@@ -9,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class LandingPageGuestUser1Component {
 
+  logoSrc= '/assets/logo.png';
+  campaignImage = '/assets/image.png';
+  notificationIcon = '/assets/image.png';
+  accountIcon = '/assets/image.png';
+  feedIcon = '/assets/image.png';
+  campaignIcon = '/assets/image.png';
+  searchIcon = '/assets/image.png';
+  homeIcon = '/assets/image.png';
 }
+

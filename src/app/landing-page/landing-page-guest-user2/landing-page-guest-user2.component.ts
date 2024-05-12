@@ -8,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './landing-page-guest-user2.component.scss'
 })
 export class LandingPageGuestUser2Component {
+  logoSrc= '/assets/logo.png';
+  campaignImage = '/assets/image.png';
+  notificationIcon = '/assets/image.png';
+  accountIcon = '/assets/image.png';
+  feedIcon = '/assets/image.png';
+  campaignIcon = '/assets/image.png';
+  searchIcon = '/assets/image.png';
+  homeIcon = '/assets/image.png';
+  
 
 }
