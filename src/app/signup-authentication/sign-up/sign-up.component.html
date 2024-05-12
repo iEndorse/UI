@@ -1,1 +1,42 @@
-<p>sign-up works!</p>
+
+    <main class="signup-form-container">
+      <img src="{{ backgroundImageSrc }}" alt="" class="background-image" />
+      <section class="form-container">
+        <header class="form-header">
+          <img src="{{ logoSrc }}" alt="Company logo" class="logo" />
+          <h1>Create An Account</h1>
+          <p>You are just a step closer, let’s get you started.</p>
+        </header>
+        <form class="signup-form">
+          <label for="fullName" class="visually-hidden">Full Name</label>
+          <input type="text" id="fullName" class="input-field" placeholder="Full Name" aria-label="Full Name" required />
+          
+          <label for="emailAddress" class="visually-hidden">Email Address</label>
+          <input type="email" id="emailAddress" class="input-field" placeholder="Email Address" aria-label="Email Address" required />
+          
+          <div class="password-container">
+            <label for="password" class="visually-hidden">Password</label>
+            <input type="password" id="password" class="input-field" placeholder="Password" aria-label="Password" required />
+            <img src="{{ viewPasswordIconSrc }}" alt="View password" class="view-password-icon" />
+          </div>
+          
+          <div class="password-container">
+            <label for="confirmPassword" class="visually-hidden">Confirm Password</label>
+            <input type="password" id="confirmPassword" class="input-field" placeholder="Confirm Password" aria-label="Confirm Password" required />
+            <img src="{{ viewPasswordIconSrc }}" alt="View password" class="view-password-icon" />
+          </div>
+          <button type="submit" class="submit-button">Create Account</button>
+        </form>
+        <footer class="form-footer">
+          <p class="signup-options">Or sign up with</p>
+          <div class="social-media-icons">
+            <img src="{{ facebookIconSrc }}" alt="Sign up with Facebook" class="social-icon" />
+            <img src="{{ googleIconSrc }}" alt="Sign up with Google" class="social-icon" />
+          </div>
+          <div class="signin-redirect">
+            <p>You already have an account? <a href="#" class="signin-link">Sign In.</a></p>
+          </div>
+        </footer>
+      </section>
+    </main>
+  

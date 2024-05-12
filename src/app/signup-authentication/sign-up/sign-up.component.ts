@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './sign-up.component.scss'
 })
 export class SignUpComponent {
-
+  backgroundImageSrc='';
+  logoSrc='';
+  viewPasswordIconSrc ='';
+  facebookIconSrc  ='';
+  googleIconSrc  ='';
 }
