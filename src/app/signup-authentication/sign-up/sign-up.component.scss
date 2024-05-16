@@ -1,97 +1,165 @@
-.signup-form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    min-height: 100vh;
-  }
-  .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
+.account-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  min-height: 1116px;
+}
+.background-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.form-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.08) 14.58%, rgba(254, 254, 254, 0.78) 50%, #fff 70.83%, #fff 83.33%, #fff 100%);
+  width: 100%;
+  padding: 80px 60px;
+}
+@media (max-width: 991px) {
   .form-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 80px px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.08) 15%, rgba(255, 255, 255, 0.78) 50%, #fff 70%, #fff 85%, #fff 100%);
-    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
   }
-  .form {
-    text-align: center;
-    margin-bottom: 2rem;
+}
+.form-wrapper {
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.04), 0px 4px 24px 0px rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 704px;
+  max-width: 100%;
+  margin: 8px 0 8px 60px;
+  padding: 61px 60px;
+}
+@media (max-width: 991px) {
+  .form-wrapper {
+    padding: 0 20px;
   }
-  .logo {
-    width: 72px;
-    height: auto;
-    margin-bottom: 24px;
-     h1 {
-    margin: 0.5rem 0;
-    font-size: 24px;
-  }
-  p {
-    font-size: 16px;
-    margin: 0.5 0;
-  }
-  .input-field {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    border: px solid rgba(224, 224, 224, 1);
-    background-color: rgba(242, 242, 242, 0.12);
-  }
-  .password-container {
-    position: relative;
-    margin-bottom: 1rem;
-  }
-  .view-password-icon {
-    position: absolute;
-    right: 10px;
-    top: 12px;
-    width: 24;
-    height: auto;
-  }
-  .submit-button {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    background-color: #0d236e;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-  }
-  .social-media-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 1rem;
-  }
-  .social-icon {
-    width: 56px;
-    height: auto;
-    border-radius: 28px      
-    
-  }
-
-  .signin-redirect {
-    margin-top: 1rem;
-    text-align: center;
-  }
-  .signin-link {
-color: #0d236e;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  @media (max-width: 991px) {
-    .form-container {
-      padding:0 20px;
-    }
-  }
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-width: 100%;
+}
+.logo-img {
+  width: 72px;
+  border-radius: 46.154px;
+  align-self: center;
+}
+.create-account-title {
+  text-align: center;
+  margin-top: 24px;
+  font: 700 24px/150% Georgia, -apple-system, Roboto, Helvetica, sans-serif;
+  color: #020202;
+}
+.step-text {
+  text-align: center;
+  margin-top: 8px;
+  font: 400 16px/24px Segoe UI, -apple-system, Roboto, Helvetica, sans-serif;
+  color: #020202;
+}
+.signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.input-field {
+  display: block;
+  width: calc(100% - 24px);
+  margin: 12px auto;
+  padding: 16px 12px;
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 8px;
+  background-color: rgba(242, 242, 242, 0.12);
+  font: 400 16px/150% Segoe UI, -apple-system, Roboto, Helvetica, sans-serif;
+  color: #4f4f4f;
+}
+.password-container,
+.confirm-password-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 12px 0;
+  padding: 8px 4px;
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 8px;
+  background-color: rgba(242, 242, 242, 0.12);
+}
+.password-input {
+  flex-grow: 1;
+  border: none;
+  background: none;
+  padding: 8px 12px;
+}
+.input-field:focus,
+.password-input:focus {
+  outline: none;
+}
+.visibility-icon {
+  width: 24px;
+}
+.create-account-button {
+  align-self: center;
+  margin: 24px 0;
+  padding: 12px 52px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0d236e;
+  color: #fff;
+  font: 600 16px/150% Segoe UI, -apple-system, Roboto, Helvetica, sans-serif;
+} 
+.alternative-signup {
+  margin: 24px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #020202;
+  line-height: 171%;
+}
+.separator-text {
+  padding: 2px 13px;
+  background-color: #fefefe;
+}
+.social-icons {
+  align-self: center;
+  display: flex;
+  gap: 20px;
+}
+.social-icon {
+  width: 56px;
+  box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.04), 0px 4px 24px 0px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(13, 35, 110, 1);
+  border-radius: 50%;
+}
+.existing-account {
+  margin-top: 40px;
+  text-align: center;
+  font: 400 14px/24px Mulish, sans-serif;
+}
+.account-text {
+  font-family: 'Segoe UI', -apple-system, Roboto, Helvetica, sans-serif;
+}
+.signin-link {
+  color: rgba(0, 0, 1, 1);
+  font: 700 14px/24px Georgia, sans-serif;
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

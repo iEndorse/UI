@@ -1,42 +1,44 @@
 
-    <main class="signup-form-container">
-      <img src="{{ backgroundImageSrc }}" alt="" class="background-image" />
-      <section class="form-container">
-        <header class="form-header">
-          <img src="{{ logoSrc }}" alt="Company logo" class="logo" />
-          <h1>Create An Account</h1>
-          <p>You are just a step closer, let’s get you started.</p>
-        </header>
+<section class="account-section">
+  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c01dc7436aef935a932778cf3b4a6698a4bc017c0dd6d8b40d58630977fa5f3c?apiKey=bf0b5ee4dd744274abe2708bc8225c0e&" alt="" class="background-img" />
+  <div class="form-container">
+    <div class="form-wrapper">
+      <div class="form-content">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/606651fca276db95da84ff3b61f68f3c11e08c4c41a0c767f9b38bea6a57b048?apiKey=bf0b5ee4dd744274abe2708bc8225c0e&" alt="" class="logo-img" />
+        <h1 class="create-account-title">Create An Account</h1>
+        <p class="step-text">You are just a step closer, let’s get you started.</p>
         <form class="signup-form">
           <label for="fullName" class="visually-hidden">Full Name</label>
-          <input type="text" id="fullName" class="input-field" placeholder="Full Name" aria-label="Full Name" required />
-          
+          <input id="fullName" type="text" class="input-field" placeholder="Full Name" aria-label="Full Name" />
           <label for="emailAddress" class="visually-hidden">Email Address</label>
-          <input type="email" id="emailAddress" class="input-field" placeholder="Email Address" aria-label="Email Address" required />
-          
+          <input id="emailAddress" type="email" class="input-field" placeholder="Email Address" aria-label="Email Address" />
           <div class="password-container">
             <label for="password" class="visually-hidden">Password</label>
-            <input type="password" id="password" class="input-field" placeholder="Password" aria-label="Password" required />
-            <img src="{{ viewPasswordIconSrc }}" alt="View password" class="view-password-icon" />
+            <input id="password" type="password" class="input-field password-input" placeholder="Password" aria-label="Password" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/790dfca3f58e9b7547c229358a80dd07a1c59cf488bf776ffc0e379170a071ac?apiKey=bf0b5ee4dd744274abe2708bc8225c0e&" alt="" class="visibility-icon" />
           </div>
-          
-          <div class="password-container">
+          <div class="confirm-password-container">
             <label for="confirmPassword" class="visually-hidden">Confirm Password</label>
-            <input type="password" id="confirmPassword" class="input-field" placeholder="Confirm Password" aria-label="Confirm Password" required />
-            <img src="{{ viewPasswordIconSrc }}" alt="View password" class="view-password-icon" />
+            <input id="confirmPassword" type="password" class="input-field password-input" placeholder="Confirm Password" aria-label="Confirm Password" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/790dfca3f58e9b7547c229358a80dd07a1c59cf488bf776ffc0e379170a071ac?apiKey=bf0b5ee4dd744274abe2708bc8225c0e&" alt="" class="visibility-icon" />
           </div>
-          <button type="submit" class="submit-button">Create Account</button>
+          <button class="create-account-button">Create Account</button>
         </form>
-        <footer class="form-footer">
-          <p class="signup-options">Or sign up with</p>
-          <div class="social-media-icons">
-            <img src="{{ facebookIconSrc }}" alt="Sign up with Facebook" class="social-icon" />
-            <img src="{{ googleIconSrc }}" alt="Sign up with Google" class="social-icon" />
-          </div>
-          <div class="signin-redirect">
-            <p>You already have an account? <a href="#" class="signin-link">Sign In.</a></p>
-          </div>
-        </footer>
-      </section>
-    </main>
-  
+        <div class="alternative-signup">
+          <span class="separator-text">Or sign up with</span>
+        </div>
+        <div class="social-icons">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/327b5528d62faf5a85491981231de05c878296ffe45c01adaeee3bae3952ee93?apiKey=bf0b5ee4dd744274abe2708bc8225c0e&" alt="Sign up with Social Media" class="social-icon" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/add2d9d1050ad3c311349e9b8007b4686d784a4650922bc74ecd8165a35b80e0?apiKey=bf0b5ee4dd744274abe2708bc8225c0e&" alt="Sign up with Social Media" class="social-icon" />
+        </div>
+        <div class="existing-account">
+          <span class="account-text">You already have an account? </span>
+          <a href="#" class="signin-link">Sign In</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+ 
